@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block head %}
+    <script type="text/javascript" src="{{STATIC_URL}}steal/steal.js?app_ventas"></script>
+{% endblock %}
+
+{% block menu %}
+<ul id="menu">
+    <li id="ventas">
+    	<a href="javascript://">Ventas</a>
+    </li>
+
+    <li id="movimientos">
+    	<a href="javascript://">Movimientos</a>
+    </li>
+
+    <li id="inventario">
+    	<a href="javascript://">Inventario</a>
+    </li>
+
+    <li id="usuarios">
+    	<a href="javascript://">Usuarios</a>
+    </li>
+
+	<li id="caja">
+		<a href="javascript://">Caja</a>
+	</li>
+
+    <li class="logout">
+    	<a href="javascript://">Salir</a>
+    </li>
+</ul>
+{% endblock menu %}
+
+{% block contenido %}
+    <h1>Cargando...</h1>
+{% endblock contenido %}
